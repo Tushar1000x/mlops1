@@ -1,0 +1,1 @@
+## code related to reading the data like transformation , etc, try to divide the data into train and test etc and create validation data

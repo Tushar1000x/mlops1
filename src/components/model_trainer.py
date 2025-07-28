@@ -1,0 +1,1 @@
+## training the data model, solving data regression ,  etc changing values, model pickel file to cloud
