@@ -1,0 +1,1 @@
+## functionality i am writing in common way and will be used in entire application will be wwritten here.... like reading data base i will create mongo db client over here
