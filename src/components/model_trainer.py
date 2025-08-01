@@ -99,6 +99,8 @@ class ModelTrainer:
                 file_path=self.model_trainer_config.trained_model_file_path,
                 obj=best_model
             )
+
+            ## evaluating model by using r^2 test
             predicted=best_model.predict(X_test)
 
             r2_square=r2_score(Y_test,predicted)

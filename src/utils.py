@@ -11,6 +11,10 @@ from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV
 
 
+
+## print(os.path.exists('artifacts/preprocessor.pkl'))  # Should print True if the file exists
+
+
 def save_object(file_path,obj):
     try:
         dir_path=os.path.dirname(file_path)
@@ -51,7 +55,12 @@ def evaluate_models(x_train,y_train,x_test,y_test,models,params):
     except Exception as e:
         raise CustomException(e,sys)
     
-
+def load_object(file_path):
+    try:
+        with open(file_path,"rb") as file_obj:
+            return dill.load(file_obj)
+    except Exception as e:
+        raise CustomException(e,sys)
 
 
 
